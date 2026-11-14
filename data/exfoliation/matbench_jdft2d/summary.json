@@ -1,0 +1,11 @@
+{
+ "dataset": "matbench_jdft2d",
+ "n_labelled": 636,
+ "unit": "meV/atom",
+ "target_min": 0.026500000000151402,
+ "target_max": 1604.0382857142856,
+ "target_mean": 112.69830857504199,
+ "downloaded": "2026-11-13",
+ "label_field": "exfoliation_en",
+ "official_folds": "data/matbench_meta/folds.json"
+}

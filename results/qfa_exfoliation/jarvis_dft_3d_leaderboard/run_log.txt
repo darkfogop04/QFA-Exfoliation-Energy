@@ -1,0 +1,13 @@
+leaderboard split: 812 materials, test 81
+  seed 0: val A 0.2403  B 0.2403  pruned 0.2403 (26/64)  mlp 0.2403  [1143s]
+  seed 1: val A 0.3146  B 0.3146  pruned 0.3146 (26/64)  mlp 0.3146  [2067s]
+  seed 2: val A 0.2654  B 0.2654  pruned 0.2654 (26/64)  mlp 0.2654  [3209s]
+  classical              30.487
+  hybrid                 30.487
+  hybrid_pruned          30.487
+  mlp_residual           30.487
+  qt_hybrid_pruned       32.011
+  median                 48.839
+  rf_descriptors         51.378
+  dummy                  60.276
+wrote C:\Users\deepa\OneDrive\Desktop\MTP\Final-Model-QML\qc-improved\results\qfa_exfoliation\jarvis_dft_3d_leaderboard\test.json

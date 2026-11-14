@@ -1,0 +1,14 @@
+{
+ "dataset": "mc2d_mounet2018",
+ "n_labelled": 1694,
+ "unit": "meV/A^2 (interlayer binding energy, DF2-C09)",
+ "target_min": 1.49,
+ "target_max": 222.02,
+ "target_mean": 35.683482880755605,
+ "converted": "2026-11-13",
+ "label_field": "BE_DF2C09[meV/A^2] from EE_and_PE_structures.txt",
+ "n_rows": 2110,
+ "skipped": 143,
+ "source": "https://archive.materialscloud.org/records/rbqe0-q3717 (CC-BY 4.0)",
+ "note": "Monolayer (exfoliated 2D) structures; per area, not per atom; easily (EE) and potentially (PE) exfoliable materials only"
+}

@@ -1,0 +1,14 @@
+{
+ "dataset": "mc2d_campi2022",
+ "n_labelled": 2848,
+ "unit": "meV/A^2 (interlayer binding energy, DF2-C09)",
+ "target_min": 0.18112533220788177,
+ "target_max": 222.023842930015,
+ "target_mean": 34.65193069774831,
+ "converted": "2026-11-13",
+ "label_field": "binding_energy_per_substructure_per_unit_area_df2 (eV/A^2 x 1000)",
+ "n_entries_total": 3078,
+ "skipped": 230,
+ "source": "https://doi.org/10.24435/materialscloud:36-nd (CC-BY 4.0)",
+ "note": "As-extracted (unrelaxed) monolayers, as used for the binding energy; per area; expanded MC2D, overlaps mc2d_mounet2018"
+}

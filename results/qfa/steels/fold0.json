@@ -1,0 +1,194 @@
+{
+ "task": "steels",
+ "tier": "tiny",
+ "n_train": 249,
+ "ablation": "none",
+ "per_seed": [
+  {
+   "seed": 0,
+   "sec_classical": 70.18994808197021,
+   "val_classical": 0.3036864101886749,
+   "params": {
+    "classical": 4417,
+    "quantum_head": 345,
+    "total": 4762
+   },
+   "depth_weights": null,
+   "val_hybrid": 0.3036864101886749,
+   "gates_dense": {
+    "data_ry": 24,
+    "trainable": 64,
+    "cnot": 24,
+    "total": 112
+   },
+   "sec_hybrid_and_pruning": 87.6043791770935,
+   "prune_history": [
+    [
+     64,
+     0.3036864101886749
+    ],
+    [
+     48,
+     0.3036864101886749
+    ],
+    [
+     36,
+     0.3036864101886749
+    ],
+    [
+     27,
+     0.3036864101886749
+    ],
+    [
+     26,
+     0.2981811463832855
+    ]
+   ],
+   "gates_pruned": {
+    "data_ry": 24,
+    "trainable": 26,
+    "cnot": 24,
+    "total": 74
+   },
+   "params_pruned": {
+    "classical": 4417,
+    "quantum_head": 307,
+    "total": 4724
+   },
+   "val_mlp_residual": 0.3036864101886749,
+   "sec_qt": 63.73521161079407,
+   "val_qt": 0.3068690001964569,
+   "qt_qubits": 13,
+   "qt_generated": 4417,
+   "qt_trained": 948,
+   "qt_materialised_equal": true
+  },
+  {
+   "seed": 1,
+   "sec_classical": 92.05404806137085,
+   "val_classical": 0.2576613128185272,
+   "params": {
+    "classical": 4417,
+    "quantum_head": 345,
+    "total": 4762
+   },
+   "depth_weights": null,
+   "val_hybrid": 0.2576613128185272,
+   "gates_dense": {
+    "data_ry": 24,
+    "trainable": 64,
+    "cnot": 24,
+    "total": 112
+   },
+   "sec_hybrid_and_pruning": 84.11415767669678,
+   "prune_history": [
+    [
+     64,
+     0.2576613128185272
+    ],
+    [
+     48,
+     0.2555848956108093
+    ],
+    [
+     36,
+     0.2519952654838562
+    ],
+    [
+     27,
+     0.25143587589263916
+    ],
+    [
+     26,
+     0.2514331340789795
+    ]
+   ],
+   "gates_pruned": {
+    "data_ry": 24,
+    "trainable": 26,
+    "cnot": 24,
+    "total": 74
+   },
+   "params_pruned": {
+    "classical": 4417,
+    "quantum_head": 307,
+    "total": 4724
+   },
+   "val_mlp_residual": 0.2576613128185272,
+   "sec_qt": 130.62223529815674,
+   "val_qt": 0.3516015112400055,
+   "qt_qubits": 13,
+   "qt_generated": 4417,
+   "qt_trained": 948,
+   "qt_materialised_equal": true
+  },
+  {
+   "seed": 2,
+   "sec_classical": 42.00123929977417,
+   "val_classical": 0.39012327790260315,
+   "params": {
+    "classical": 4385,
+    "quantum_head": 345,
+    "total": 4730
+   },
+   "depth_weights": null,
+   "val_hybrid": 0.3331119120121002,
+   "gates_dense": {
+    "data_ry": 24,
+    "trainable": 64,
+    "cnot": 24,
+    "total": 112
+   },
+   "sec_hybrid_and_pruning": 94.94932961463928,
+   "prune_history": [
+    [
+     64,
+     0.3331119120121002
+    ],
+    [
+     48,
+     0.31020671129226685
+    ],
+    [
+     36,
+     0.30814328789711
+    ],
+    [
+     27,
+     0.3080623745918274
+    ],
+    [
+     26,
+     0.3080441653728485
+    ]
+   ],
+   "gates_pruned": {
+    "data_ry": 24,
+    "trainable": 26,
+    "cnot": 24,
+    "total": 74
+   },
+   "params_pruned": {
+    "classical": 4385,
+    "quantum_head": 307,
+    "total": 4692
+   },
+   "val_mlp_residual": 0.39012327790260315,
+   "sec_qt": 47.458415031433105,
+   "val_qt": 0.3200872838497162,
+   "qt_qubits": 13,
+   "qt_generated": 4385,
+   "qt_trained": 948,
+   "qt_materialised_equal": true
+  }
+ ],
+ "test": {
+  "classical": 135.5729765392485,
+  "hybrid": 128.0201644655258,
+  "hybrid_pruned": 128.10993322947667,
+  "mlp_residual": 135.5729765392485,
+  "qt_hybrid_pruned": 124.32872101314483,
+  "rf_descriptors": 111.71262962962928
+ },
+ "seconds": 716.3897905349731
+}

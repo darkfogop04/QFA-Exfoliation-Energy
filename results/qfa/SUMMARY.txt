@@ -1,0 +1,86 @@
+
+steels (MPa), 3 fold(s)
+  QFA classical               109.1456  [135.573, 85.7849, 106.0789]
+  QFA hybrid                  101.9696  [128.0202, 78.6946, 99.1941]
+  QFA hybrid_pruned            99.4940  [128.1099, 71.4847, 98.8873]
+  QFA mlp_residual            109.1456  [135.573, 85.7849, 106.0789]
+  QFA qt_hybrid_pruned        112.9253  [124.3287, 96.1091, 118.3382]
+  QFA rf_descriptors          103.7586  [111.7126, 89.3516, 110.2116]
+  LB  modnet_v0.1.12           85.4713  (same folds)
+  LB  RFLR                     87.7764  (same folds)
+  LB  modnet_v0.1.10           97.8850  (same folds)
+  LB  automatminer_expressv2020   91.0869  (same folds)
+  LB  rf                      103.4360  (same folds)
+  LB  CrabNet                 104.1464  (same folds)
+  LB  dummy                   228.8764  (same folds)
+
+jdft2d (meV/atom), 5 fold(s)
+  QFA classical                27.2329  [20.8948, 29.0388, 39.6012, 15.2256, 31.404]
+  QFA hybrid                   27.1778  [20.8092, 28.2367, 40.2135, 15.2256, 31.404]
+  QFA hybrid_pruned            27.2654  [20.8356, 28.6432, 40.2188, 15.2256, 31.404]
+  QFA mlp_residual             27.1647  [20.7871, 28.2541, 40.1528, 15.2256, 31.404]
+  QFA qt_hybrid_pruned         35.3022  [24.3569, 38.7747, 52.9537, 23.2581, 37.1678]
+  QFA rf_descriptors           49.0234  [42.5659, 45.3895, 63.065, 43.2357, 50.8612]
+  LB  modnet_v0.1.12           33.1918  (same folds)
+  LB  modnet_v0.1.10           34.5368  (same folds)
+  LB  automatminer_expressv2020   39.8497  (same folds)
+  LB  alignn                   43.4244  (same folds)
+  LB  CrabNet                  45.6104  (same folds)
+  LB  cgcnnv2019               49.2440  (same folds)
+  LB  rf                       50.0440  (same folds)
+  LB  dummy                    67.2851  (same folds)
+
+phonons (cm^-1), 1 fold(s)
+  QFA classical                29.3137  [29.3137]
+  QFA hybrid                   27.4825  [27.4825]
+  QFA hybrid_pruned            27.5154  [27.5154]
+  QFA mlp_residual             27.1799  [27.1799]
+  QFA qt_hybrid_pruned         47.7199  [47.7199]
+  QFA rf_descriptors           79.1761  [79.1761]
+  LB  alignn                   33.4099  (same folds)
+  LB  modnet_v0.1.12           34.7662  (same folds)
+  LB  modnet_v0.1.10           40.2218  (same folds)
+  LB  CrabNet                  60.8044  (same folds)
+  LB  automatminer_expressv2020   67.5727  (same folds)
+  LB  cgcnnv2019               81.1553  (same folds)
+  LB  rf                       82.3863  (same folds)
+  LB  dummy                   337.1003  (same folds)
+
+expt_gap (eV), 1 fold(s)
+  QFA classical                 0.3932  [0.3932]
+  QFA hybrid                    0.3932  [0.3932]
+  QFA hybrid_pruned             0.3932  [0.3932]
+  QFA mlp_residual              0.3932  [0.3932]
+  QFA qt_hybrid_pruned          0.4878  [0.4878]
+  QFA rf_descriptors            0.4346  [0.4346]
+  LB  Ax_SAASBO_CrabNet_v1.2.7    0.3214  (same folds)
+  LB  modnet_v0.1.12            0.3121  (same folds)
+  LB  CrabNet                   0.3476  (same folds)
+  LB  modnet_v0.1.10            0.3272  (same folds)
+  LB  Ax_CrabNet_v1.2.1         0.3465  (same folds)
+  LB  Ax_10_90_CrabNet_v1.2.7    0.3457  (same folds)
+  LB  CrabNet_v1.2.1            0.3489  (same folds)
+  LB  automatminer_expressv2020    0.3998  (same folds)
+  LB  rf                        0.4360  (same folds)
+  LB  dummy                     1.0965  (same folds)
+dielectric: no results yet
+expt_is_metal: no results yet
+
+glass (ROC-AUC), 1 fold(s)
+  QFA classical                 0.9321  [0.9321]
+  QFA hybrid                    0.9314  [0.9314]
+  QFA hybrid_pruned             0.9330  [0.933]
+  QFA mlp_residual              0.9314  [0.9314]
+  QFA qt_hybrid_pruned          0.9127  [0.9127]
+  QFA rf_descriptors            0.9632  [0.9632]
+  LB  dummy                     0.5212  (same folds)
+  LB  modnet_v0.1.10            0.8262  (same folds)
+  LB  rf                        0.8860  (same folds)
+  LB  automatminer_expressv2020    0.8441  (same folds)
+  LB  modnet_v0.1.12            0.9743  (same folds)
+log_gvrh: no results yet
+log_kvrh: no results yet
+perovskites: no results yet
+mp_gap: no results yet
+mp_is_metal: no results yet
+mp_e_form: no results yet

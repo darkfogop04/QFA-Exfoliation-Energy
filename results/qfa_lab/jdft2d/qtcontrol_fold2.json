@@ -1,0 +1,39 @@
+{
+ "per_seed": [
+  {
+   "seed": 0,
+   "val_quantum": 0.3489562876190158,
+   "trained_quantum": 639,
+   "epochs_quantum": 92,
+   "val_none": 0.44052218913847385,
+   "trained_none": 535,
+   "epochs_none": 31,
+   "val_direct": 0.3491273539005422
+  },
+  {
+   "seed": 1,
+   "val_quantum": 0.3420897051235639,
+   "trained_quantum": 639,
+   "epochs_quantum": 260,
+   "val_none": 0.32816357258819534,
+   "trained_none": 535,
+   "epochs_none": 231,
+   "val_direct": 0.3848166050549055
+  },
+  {
+   "seed": 2,
+   "val_quantum": 0.3790189039906959,
+   "trained_quantum": 639,
+   "epochs_quantum": 135,
+   "val_none": 0.39235740270659175,
+   "trained_none": 535,
+   "epochs_none": 69,
+   "val_direct": 0.4281889902770736
+  }
+ ],
+ "test": {
+  "qt_quantum": 66.26658241810634,
+  "qt_none": 69.6892174154406,
+  "direct": 64.8409905884994
+ }
+}

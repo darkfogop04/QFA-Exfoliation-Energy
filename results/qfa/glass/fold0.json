@@ -1,0 +1,127 @@
+{
+ "task": "glass",
+ "tier": "small",
+ "n_train": 4544,
+ "ablation": "none",
+ "per_seed": [
+  {
+   "seed": 0,
+   "sec_classical": 570.6401898860931,
+   "val_classical": 0.9077462850853054,
+   "params": {
+    "classical": 6561,
+    "quantum_head": 345,
+    "total": 6906
+   },
+   "depth_weights": null,
+   "val_hybrid": 0.9102228948816732,
+   "gates_dense": {
+    "data_ry": 24,
+    "trainable": 64,
+    "cnot": 24,
+    "total": 112
+   },
+   "sec_hybrid_and_pruning": 402.51564049720764,
+   "prune_history": [
+    [
+     64,
+     0.9102228948816732
+    ],
+    [
+     48,
+     0.911782241790497
+    ],
+    [
+     36,
+     0.9133874518436984
+    ],
+    [
+     32,
+     0.9184782608695653
+    ]
+   ],
+   "gates_pruned": {
+    "data_ry": 24,
+    "trainable": 32,
+    "cnot": 24,
+    "total": 80
+   },
+   "params_pruned": {
+    "classical": 6561,
+    "quantum_head": 313,
+    "total": 6874
+   },
+   "val_mlp_residual": 0.910062373876353,
+   "sec_qt": 722.4019975662231,
+   "val_qt": 0.9024261603375527,
+   "qt_qubits": 13,
+   "qt_generated": 6561,
+   "qt_trained": 954,
+   "qt_materialised_equal": true
+  },
+  {
+   "seed": 1,
+   "sec_classical": 724.617874622345,
+   "val_classical": 0.8833050868273032,
+   "params": {
+    "classical": 6593,
+    "quantum_head": 345,
+    "total": 6938
+   },
+   "depth_weights": null,
+   "val_hybrid": 0.8833050868273032,
+   "gates_dense": {
+    "data_ry": 24,
+    "trainable": 64,
+    "cnot": 24,
+    "total": 112
+   },
+   "sec_hybrid_and_pruning": 270.0465319156647,
+   "prune_history": [
+    [
+     64,
+     0.8833050868273032
+    ],
+    [
+     48,
+     0.8833050868273032
+    ],
+    [
+     36,
+     0.8833050868273032
+    ],
+    [
+     32,
+     0.8833050868273032
+    ]
+   ],
+   "gates_pruned": {
+    "data_ry": 24,
+    "trainable": 32,
+    "cnot": 24,
+    "total": 80
+   },
+   "params_pruned": {
+    "classical": 6593,
+    "quantum_head": 313,
+    "total": 6906
+   },
+   "val_mlp_residual": 0.8833050868273032,
+   "sec_qt": 720.9172782897949,
+   "val_qt": 0.876034681796969,
+   "qt_qubits": 13,
+   "qt_generated": 6593,
+   "qt_trained": 954,
+   "qt_materialised_equal": true
+  }
+ ],
+ "test": {
+  "classical": 0.9320949292475037,
+  "hybrid": 0.9314094379347879,
+  "hybrid_pruned": 0.9329988738357005,
+  "mlp_residual": 0.931360474269594,
+  "qt_hybrid_pruned": 0.912739215752741,
+  "rf_descriptors": 0.963222637785637
+ },
+ "seconds": 3426.176535844803
+}

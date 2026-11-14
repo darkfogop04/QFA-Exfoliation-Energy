@@ -1,0 +1,96 @@
+
+=== jarvis_dft_3d fold 1 (tiny, 480 min left) ===
+jarvis_dft_3d: 813 materials, target 0.0 to 948.9 meV/atom (mean 111.0); fold sizes [163, 163, 163, 162, 162]
+fold 1
+  seed 0: val A 0.4305  B 0.4305  pruned 0.4305 (26/64)  mlp 0.4305  [860s]
+  seed 1: val A 0.2246  B 0.2224  pruned 0.2214 (26/64)  mlp 0.2246  [1726s]
+  seed 2: val A 0.2999  B 0.2999  pruned 0.2999 (26/64)  mlp 0.2999  [2533s]
+fold 1: {'classical': 23.38816940962903, 'hybrid': 24.000249107688486, 'hybrid_pruned': 23.98414090490049, 'mlp_residual': 23.38816940962903, 'qt_hybrid_pruned': 29.353547216310094, 'rf_descriptors': 46.240985688236435}
+
+jarvis_dft_3d: MAE in meV/atom (lower is better), 2 fold(s): ['fold0', 'fold1']
+  classical                 25.806  [28.225, 23.388]
+  hybrid                    26.112  [28.225, 24.0]
+  hybrid_pruned             26.104  [28.225, 23.984]
+  mlp_residual              25.806  [28.225, 23.388]
+  qt_hybrid_pruned          37.670  [45.987, 29.354]
+  rf_descriptors            44.136  [42.031, 46.241]
+
+=== jarvis_dft_2d fold 1 (tiny, 438 min left) ===
+jarvis_dft_2d: 748 materials, target 0.0 to 1604.0 meV/atom (mean 116.1); fold sizes [150, 150, 150, 149, 149]
+fold 1
+  seed 0: val A 0.2881  B 0.2881  pruned 0.2881 (26/64)  mlp 0.2881  [705s]
+  seed 1: val A 0.3291  B 0.3291  pruned 0.3291 (26/64)  mlp 0.3291  [1419s]
+  seed 2: val A 0.3140  B 0.3140  pruned 0.3121 (26/64)  mlp 0.3118  [2154s]
+fold 1: {'classical': 33.83015203755697, 'hybrid': 33.83015203755697, 'hybrid_pruned': 33.806267117309574, 'mlp_residual': 33.71959721069336, 'qt_hybrid_pruned': 38.877971287536624, 'rf_descriptors': 56.116838992857154}
+
+jarvis_dft_2d: MAE in meV/atom (lower is better), 2 fold(s): ['fold0', 'fold1']
+  classical                 27.867  [21.905, 33.83]
+  hybrid                    27.867  [21.905, 33.83]
+  hybrid_pruned             27.855  [21.905, 33.806]
+  mlp_residual              27.812  [21.905, 33.72]
+  qt_hybrid_pruned          34.808  [30.738, 38.878]
+  rf_descriptors            48.723  [41.329, 56.117]
+
+=== twodmatpedia fold 1 (small, 402 min left) ===
+twodmatpedia: 4527 materials, target -1218.7 to 3056.5 meV/atom (mean 150.9); fold sizes [906, 906, 905, 905, 905]
+fold 1
+  seed 0: val A 0.1481  B 0.1478  pruned 0.1471 (32/64)  mlp 0.1479  [1317s]
+  seed 1: val A 0.2259  B 0.2259  pruned 0.2258 (32/64)  mlp 0.2259  [2601s]
+fold 1: {'classical': 37.98213454909146, 'hybrid': 38.17658414727752, 'hybrid_pruned': 38.009471344440705, 'mlp_residual': 38.27384993481229, 'qt_hybrid_pruned': 52.32887555538731, 'rf_descriptors': 71.43230941230385}
+
+twodmatpedia: MAE in meV/atom (lower is better), 2 fold(s): ['fold0', 'fold1']
+  classical                 42.833  [47.685, 37.982]
+  hybrid                    42.943  [47.709, 38.177]
+  hybrid_pruned             42.520  [47.031, 38.009]
+  mlp_residual              42.664  [47.055, 38.274]
+  qt_hybrid_pruned          61.830  [71.331, 52.329]
+  rf_descriptors            77.446  [83.46, 71.432]
+
+=== jarvis_dft_3d fold 2 (tiny, 358 min left) ===
+jarvis_dft_3d: 813 materials, target 0.0 to 948.9 meV/atom (mean 111.0); fold sizes [163, 163, 163, 162, 162]
+fold 2
+  seed 0: val A 0.3470  B 0.3470  pruned 0.3470 (26/64)  mlp 0.3470  [888s]
+  seed 1: val A 0.2963  B 0.2963  pruned 0.2963 (26/64)  mlp 0.2953  [1680s]
+  seed 2: val A 0.1370  B 0.1370  pruned 0.1370 (26/64)  mlp 0.1370  [2582s]
+fold 2: {'classical': 33.61087998419452, 'hybrid': 33.61087998419452, 'hybrid_pruned': 33.61087998419452, 'mlp_residual': 33.61510107871214, 'qt_hybrid_pruned': 43.510093622500186, 'rf_descriptors': 50.012880088372775}
+
+jarvis_dft_3d: MAE in meV/atom (lower is better), 3 fold(s): ['fold0', 'fold1', 'fold2']
+  classical                 28.408  [28.225, 23.388, 33.611]
+  hybrid                    28.612  [28.225, 24.0, 33.611]
+  hybrid_pruned             28.607  [28.225, 23.984, 33.611]
+  mlp_residual              28.409  [28.225, 23.388, 33.615]
+  qt_hybrid_pruned          39.617  [45.987, 29.354, 43.51]
+  rf_descriptors            46.095  [42.031, 46.241, 50.013]
+
+=== jarvis_dft_2d fold 2 (tiny, 315 min left) ===
+jarvis_dft_2d: 748 materials, target 0.0 to 1604.0 meV/atom (mean 116.1); fold sizes [150, 150, 150, 149, 149]
+fold 2
+  seed 0: val A 0.1217  B 0.1207  pruned 0.1207 (64/64)  mlp 0.1203  [671s]
+  seed 1: val A 0.1579  B 0.1579  pruned 0.1579 (26/64)  mlp 0.1579  [1431s]
+  seed 2: val A 0.4414  B 0.4414  pruned 0.4414 (26/64)  mlp 0.4414  [2092s]
+fold 2: {'classical': 37.993382907613125, 'hybrid': 37.4734972442627, 'hybrid_pruned': 37.4734972442627, 'mlp_residual': 37.92563383992514, 'qt_hybrid_pruned': 46.82529317626953, 'rf_descriptors': 60.65973883271603}
+
+jarvis_dft_2d: MAE in meV/atom (lower is better), 3 fold(s): ['fold0', 'fold1', 'fold2']
+  classical                 31.243  [21.905, 33.83, 37.993]
+  hybrid                    31.069  [21.905, 33.83, 37.473]
+  hybrid_pruned             31.061  [21.905, 33.806, 37.473]
+  mlp_residual              31.183  [21.905, 33.72, 37.926]
+  qt_hybrid_pruned          38.814  [30.738, 38.878, 46.825]
+  rf_descriptors            52.702  [41.329, 56.117, 60.66]
+
+=== twodmatpedia fold 2 (small, 280 min left) ===
+twodmatpedia: 4527 materials, target -1218.7 to 3056.5 meV/atom (mean 150.9); fold sizes [906, 906, 905, 905, 905]
+fold 2
+  seed 0: val A 0.2045  B 0.2045  pruned 0.2045 (32/64)  mlp 0.2045  [1434s]
+  seed 1: val A 0.1890  B 0.1890  pruned 0.1890 (32/64)  mlp 0.1890  [2810s]
+fold 2: {'classical': 40.41006121551226, 'hybrid': 40.41006121551226, 'hybrid_pruned': 40.41006121551226, 'mlp_residual': 40.41006121551226, 'qt_hybrid_pruned': 54.42776945714881, 'rf_descriptors': 69.69970645844562}
+
+twodmatpedia: MAE in meV/atom (lower is better), 3 fold(s): ['fold0', 'fold1', 'fold2']
+  classical                 42.026  [47.685, 37.982, 40.41]
+  hybrid                    42.098  [47.709, 38.177, 40.41]
+  hybrid_pruned             41.817  [47.031, 38.009, 40.41]
+  mlp_residual              41.913  [47.055, 38.274, 40.41]
+  qt_hybrid_pruned          59.362  [71.331, 52.329, 54.428]
+  rf_descriptors            74.864  [83.46, 71.432, 69.7]
+
+Finished. See C:\Users\deepa\OneDrive\Desktop\MTP\Final-Model-QML\qc-improved\results\qfa_exfoliation\STATUS.md

@@ -1,0 +1,21 @@
+# QFA-Net (final model). Versions used for every reported result (Python 3.13.1, Windows 11, CPU only).
+torch==2.15.0            # CPU build is enough; install from https://pytorch.org for your platform
+orb-models==0.7.0        # frozen ORB-v2 backbone (Apache-2.0); downloads its weights (~100 MB) on first use
+ase==3.29.0
+pymatgen==2026.10.24
+spglib==2.8.0
+numpy==2.5.4
+scipy==1.18.1
+pandas==2.3.3
+scikit-learn==1.9.1
+PyYAML==6.0.3
+pytest==9.2.0
+
+# Exfoliation datasets and open-source baselines
+jarvis-tools==2026.6.12  # JARVIS-DFT 3D / 2D downloads
+requests==2.34.2         # 2DMatPedia download
+matminer==0.10.1         # matminer_rf / matminer_xgboost baselines (JARVIS-Leaderboard recipes)
+xgboost==3.4.1
+
+# MatBench loader: its scikit-learn==1.0.1 pin conflicts with the line above, so install it separately:
+#   pip install --no-deps matbench==0.6

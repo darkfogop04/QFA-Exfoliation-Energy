@@ -1,0 +1,25 @@
+jdft2d fold 0
+  seed 0: {'seed': 0, 'val_quantum': 0.22552425211596408, 'trained_quantum': 639, 'epochs_quantum': 197, 'val_none': 0.23490508594056986, 'trained_none': 535, 'epochs_none': 136, 'val_direct': 0.2751670742909445}
+  seed 1: {'seed': 1, 'val_quantum': 0.21626311959107114, 'trained_quantum': 639, 'epochs_quantum': 157, 'val_none': 0.23776960762746083, 'trained_none': 535, 'epochs_none': 93, 'val_direct': 0.21423704252578052}
+  seed 2: {'seed': 2, 'val_quantum': 0.34880680894083826, 'trained_quantum': 639, 'epochs_quantum': 147, 'val_none': 0.36845652118669564, 'trained_none': 535, 'epochs_none': 219, 'val_direct': 0.4094639144951195}
+fold 0: {'qt_quantum': 33.825098490201356, 'qt_none': 34.27496655619696, 'direct': 36.8035849759903}
+jdft2d fold 1
+  seed 0: {'seed': 0, 'val_quantum': 0.14682418492636937, 'trained_quantum': 639, 'epochs_quantum': 98, 'val_none': 0.15197546600905323, 'trained_none': 535, 'epochs_none': 147, 'val_direct': 0.16161054147685797}
+  seed 1: {'seed': 1, 'val_quantum': 0.22643134982977287, 'trained_quantum': 639, 'epochs_quantum': 239, 'val_none': 0.30706022557406576, 'trained_none': 535, 'epochs_none': 320, 'val_direct': 0.2593191615178915}
+  seed 2: {'seed': 2, 'val_quantum': 0.5984852998675287, 'trained_quantum': 639, 'epochs_quantum': 423, 'val_none': 0.6261815379097372, 'trained_none': 535, 'epochs_none': 375, 'val_direct': 0.6441952204136538}
+fold 1: {'qt_quantum': 43.42092390374813, 'qt_none': 43.14046543527528, 'direct': 49.19146775069483}
+jdft2d fold 2
+  seed 0: {'seed': 0, 'val_quantum': 0.3489562876190158, 'trained_quantum': 639, 'epochs_quantum': 92, 'val_none': 0.44052218913847385, 'trained_none': 535, 'epochs_none': 31, 'val_direct': 0.3491273539005422}
+  seed 1: {'seed': 1, 'val_quantum': 0.3420897051235639, 'trained_quantum': 639, 'epochs_quantum': 260, 'val_none': 0.32816357258819534, 'trained_none': 535, 'epochs_none': 231, 'val_direct': 0.3848166050549055}
+  seed 2: {'seed': 2, 'val_quantum': 0.3790189039906959, 'trained_quantum': 639, 'epochs_quantum': 135, 'val_none': 0.39235740270659175, 'trained_none': 535, 'epochs_none': 69, 'val_direct': 0.4281889902770736}
+fold 2: {'qt_quantum': 66.26658241810634, 'qt_none': 69.6892174154406, 'direct': 64.8409905884994}
+jdft2d fold 3
+  seed 0: {'seed': 0, 'val_quantum': 0.27783739714219013, 'trained_quantum': 639, 'epochs_quantum': 132, 'val_none': 0.19446664208050554, 'trained_none': 535, 'epochs_none': 468, 'val_direct': 0.2610673973895735}
+  seed 1: {'seed': 1, 'val_quantum': 0.3045765930282641, 'trained_quantum': 639, 'epochs_quantum': 184, 'val_none': 0.29932324949866157, 'trained_none': 535, 'epochs_none': 368, 'val_direct': 0.35180730597335236}
+  seed 2: {'seed': 2, 'val_quantum': 0.247759640072153, 'trained_quantum': 639, 'epochs_quantum': 446, 'val_none': 0.3117819239276239, 'trained_none': 535, 'epochs_none': 114, 'val_direct': 0.35918866262301347}
+fold 3: {'qt_quantum': 36.39961927980124, 'qt_none': 43.8194938654751, 'direct': 40.22609762734332}
+jdft2d fold 4
+  seed 0: {'seed': 0, 'val_quantum': 0.3065952472734065, 'trained_quantum': 639, 'epochs_quantum': 472, 'val_none': 0.33639312608374256, 'trained_none': 535, 'epochs_none': 339, 'val_direct': 0.30674920458098465}
+  seed 1: {'seed': 1, 'val_quantum': 0.26864657719459756, 'trained_quantum': 639, 'epochs_quantum': 228, 'val_none': 0.3005846343324034, 'trained_none': 535, 'epochs_none': 242, 'val_direct': 0.2874946023198535}
+  seed 2: {'seed': 2, 'val_quantum': 0.9133936611944483, 'trained_quantum': 639, 'epochs_quantum': 184, 'val_none': 0.8783322365948791, 'trained_none': 535, 'epochs_none': 700, 'val_direct': 0.8090223150700033}
+fold 4: {'qt_quantum': 49.73692435671624, 'qt_none': 54.70067307393053, 'direct': 50.24371839639229}

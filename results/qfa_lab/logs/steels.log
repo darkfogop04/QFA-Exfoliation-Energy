@@ -1,0 +1,35 @@
+steels fold 0
+  seed 0: val A 0.2620 B 0.2620 pruned 0.2620 (26/64 angles) mlp 0.2620 [90s]
+  seed 1: val A 0.2317 B 0.2317 pruned 0.2317 (26/64 angles) mlp 0.2317 [188s]
+  seed 2: val A 0.2765 B 0.2765 pruned 0.2750 (26/64 angles) mlp 0.2765 [313s]
+  seed 3: val A 0.2949 B 0.2949 pruned 0.2949 (26/64 angles) mlp 0.2949 [416s]
+  seed 4: val A 0.2125 B 0.2125 pruned 0.1877 (26/64 angles) mlp 0.2125 [521s]
+fold 0: {'classical': 120.4189656387777, 'hybrid': 120.4189656387777, 'hybrid_pruned': 118.22040465359173, 'mlp_residual': 120.4189656387777, 'qt_classical': 115.59518024502356, 'qt_hybrid_pruned': 109.29846050945898, 'rf': 111.71262962962925}
+steels fold 1
+  seed 0: val A 0.2765 B 0.2643 pruned 0.2437 (26/64 angles) mlp 0.2765 [103s]
+  seed 1: val A 0.2379 B 0.2379 pruned 0.2349 (26/64 angles) mlp 0.2379 [220s]
+  seed 2: val A 0.3323 B 0.3224 pruned 0.2991 (26/64 angles) mlp 0.3218 [331s]
+  seed 3: val A 0.3763 B 0.3763 pruned 0.3568 (26/64 angles) mlp 0.3763 [427s]
+  seed 4: val A 0.3874 B 0.3780 pruned 0.3285 (26/64 angles) mlp 0.3874 [553s]
+fold 1: {'classical': 76.94998414158803, 'hybrid': 77.90114685859876, 'hybrid_pruned': 78.99021743486281, 'mlp_residual': 77.46914527988794, 'qt_classical': 76.65504482838078, 'qt_hybrid_pruned': 77.76743639797387, 'rf': 89.35164550264552}
+steels fold 2
+  seed 0: val A 0.2554 B 0.2554 pruned 0.2359 (26/64 angles) mlp 0.2480 [129s]
+  seed 1: val A 0.2841 B 0.2841 pruned 0.2841 (26/64 angles) mlp 0.2841 [275s]
+  seed 2: val A 0.2441 B 0.2435 pruned 0.2374 (26/64 angles) mlp 0.2441 [417s]
+  seed 3: val A 0.2374 B 0.2329 pruned 0.2082 (26/64 angles) mlp 0.2371 [551s]
+  seed 4: val A 0.3271 B 0.2993 pruned 0.2589 (26/64 angles) mlp 0.3019 [681s]
+fold 2: {'classical': 113.69358474374052, 'hybrid': 107.21726920086914, 'hybrid_pruned': 105.88566747396153, 'mlp_residual': 104.41800648204087, 'qt_classical': 124.72058236411114, 'qt_hybrid_pruned': 104.89724523031131, 'rf': 110.21157526881748}
+steels fold 3
+  seed 0: val A 0.3116 B 0.2819 pruned 0.2552 (26/64 angles) mlp 0.2972 [130s]
+  seed 1: val A 0.4830 B 0.4830 pruned 0.4807 (26/64 angles) mlp 0.4751 [317s]
+  seed 2: val A 0.3314 B 0.3216 pruned 0.3192 (26/64 angles) mlp 0.3314 [454s]
+  seed 3: val A 0.1662 B 0.1662 pruned 0.1638 (26/64 angles) mlp 0.1662 [557s]
+  seed 4: val A 0.2649 B 0.2629 pruned 0.2441 (26/64 angles) mlp 0.2564 [705s]
+fold 3: {'classical': 110.37342585274064, 'hybrid': 107.69495403461143, 'hybrid_pruned': 107.1399486904321, 'mlp_residual': 107.09586941899174, 'qt_classical': 124.47686684099247, 'qt_hybrid_pruned': 121.3304492577962, 'rf': 115.28909677419328}
+steels fold 4
+  seed 0: val A 0.2764 B 0.2764 pruned 0.2764 (26/64 angles) mlp 0.2764 [98s]
+  seed 1: val A 0.3690 B 0.3342 pruned 0.2927 (26/64 angles) mlp 0.3051 [213s]
+  seed 2: val A 0.1982 B 0.1795 pruned 0.1594 (26/64 angles) mlp 0.1945 [358s]
+  seed 3: val A 0.3375 B 0.3025 pruned 0.2556 (26/64 angles) mlp 0.3244 [468s]
+  seed 4: val A 0.2146 B 0.1982 pruned 0.1849 (26/64 angles) mlp 0.2121 [642s]
+fold 4: {'classical': 107.58271247373729, 'hybrid': 101.07871986881756, 'hybrid_pruned': 99.26036386328546, 'mlp_residual': 103.76412461109061, 'qt_classical': 107.2685233219865, 'qt_hybrid_pruned': 98.9583344378814, 'rf': 95.08953763440894}

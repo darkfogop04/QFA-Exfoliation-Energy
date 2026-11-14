@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+venv_qmat/
+*_env/
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Feature caches (ORB embeddings, graphs, descriptors; 0.7 GB, rebuilt automatically on the first run)
+data/cache/
+*.npz
+*.npy
+
+# Raw dataset downloads (3 GB; recreate with experiments/download_exfoliation_data.py).
+# Kept in git: each dataset's README.md, summary.json, folds.json, dataset.json.gz and the JARVIS-Leaderboard split.
+data/exfoliation/*/raw/
+data/exfoliation/alexandria_2d/
+data/exfoliation/vahdat_exfoliability/
+data/*.json.gz
+data/*.tar.gz
+data/*.zip
+
+# Smoke-test outputs (--quick)
+results/**/*_quick.json
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+Desktop.ini

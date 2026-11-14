@@ -1,0 +1,12 @@
+jarvis_dft_2d: 273 features for 748 materials, 690 with some failed features, 2.0 min
+jarvis_dft_2d fold 0: MAE 38.135  (1 s)
+jarvis_dft_2d fold 1: MAE 51.173  (1 s)
+jarvis_dft_2d fold 2: MAE 57.944  (1 s)
+jarvis_dft_2d fold 3: MAE 38.994  (1 s)
+jarvis_dft_2d fold 4: MAE 63.543  (1 s)
+twodmatpedia: 273 features for 4527 materials, 3375 with some failed features, 14.3 min
+twodmatpedia fold 0: MAE 79.128  (5 s)
+twodmatpedia fold 1: MAE 66.005  (6 s)
+twodmatpedia fold 2: MAE 64.792  (6 s)
+twodmatpedia fold 3: MAE 58.813  (6 s)
+twodmatpedia fold 4: MAE 65.806  (6 s)

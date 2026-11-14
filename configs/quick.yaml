@@ -1,0 +1,74 @@
+# Short version of optimize.yaml for a fast end-to-end check (CI / first local run).
+# Numbers from this run are NOT results: training is cut far too short.
+
+data:
+  task_name: "matbench_jdft2d"
+  cutoff_radius: 8.0
+  max_neighbors: 12
+  batch_size: 16
+  num_workers: 2
+  val_fraction: 0.1
+
+gnn:
+  conv_type: "CGConv"
+  node_input_dim: 92
+  edge_input_dim: 41
+  hidden_dim: 64
+  num_layers: 3
+  output_dim: 8
+
+quantum:
+  n_qubits: 8
+  n_layers: 3
+  encoding: "angle"
+  diff_method: "backprop"
+  batched: true
+  entangler: "cnot"
+  input_scaling: "tanh"
+  drop_dead_params: true
+  l1_angles: 1.0e-4
+
+mlp:
+  hidden_dim: 32
+  dropout: 0.2
+  skip_connection: true
+
+training:
+  lr: 0.001
+  weight_decay: 1.0e-5
+  epochs: 10
+  patience: 5
+  lr_patience: 3
+  lr_factor: 0.5
+  grad_clip: 1.0
+  seed: 42
+
+pruning:
+  enabled: true
+  method: "ablation"
+  fraction_per_round: 0.2
+  max_sparsity: 0.6
+  tolerance: 0.05
+  finetune_epochs: 3
+  finetune_lr: 5.0e-4
+  regrow_fraction: 0.0
+
+qt:
+  enabled: true
+  targets: ["gnn", "mlp"]
+  mode: "full"
+  generator: "quantum"
+  n_qnn_layers: 8
+  mapping_hidden: 32
+  standardize: true
+  training:
+    lr: 0.005
+    epochs: 10
+    patience: 5
+
+adaptive:
+  enabled: false
+
+device:
+  gnn: "cpu"
+  quantum: "cpu"

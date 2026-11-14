@@ -1,0 +1,74 @@
+# Cost-reduction experiments: dense -> pruned -> Quantum-Train.
+# Same backbone/training as default.yaml plus the new sections.
+
+data:
+  task_name: "matbench_jdft2d"
+  cutoff_radius: 8.0
+  max_neighbors: 12
+  batch_size: 16
+  num_workers: 2
+  val_fraction: 0.1          # validation carved from MatBench train data (test fold used once)
+
+gnn:
+  conv_type: "CGConv"
+  node_input_dim: 92
+  edge_input_dim: 41
+  hidden_dim: 64
+  num_layers: 3
+  output_dim: 8
+
+quantum:
+  n_qubits: 8
+  n_layers: 3
+  encoding: "angle"
+  diff_method: "backprop"
+  batched: true              # one QNode call per batch (parameter broadcasting)
+  entangler: "cnot"          # "crx" makes two-qubit gates trainable and prunable
+  input_scaling: "tanh"      # angles = pi*tanh(x): no wrap-around of unbounded GNN outputs
+  drop_dead_params: true     # skip the 8 last-layer RZ angles that cannot affect <Z>
+  l1_angles: 1.0e-4          # small L1 on angles: pushes unimportant ones to 0 before pruning
+
+mlp:
+  hidden_dim: 32
+  dropout: 0.2
+  skip_connection: true
+
+training:
+  lr: 0.001
+  weight_decay: 1.0e-5
+  epochs: 300
+  patience: 20
+  lr_patience: 10
+  lr_factor: 0.5
+  grad_clip: 1.0
+  seed: 42
+
+pruning:
+  enabled: true
+  method: "ablation"         # ablation | magnitude | taylor
+  fraction_per_round: 0.2    # of the currently active angles
+  max_sparsity: 0.6          # never prune below 40% of the starting angles
+  tolerance: 0.02            # stop when val MAE > 1.02 x dense val MAE
+  finetune_epochs: 30
+  finetune_lr: 5.0e-4
+  regrow_fraction: 0.0       # >0 enables PECT-style random regrowth
+
+qt:
+  enabled: true
+  targets: ["gnn", "mlp"]    # module prefixes whose weights are generated (norm layers excluded)
+  mode: "full"               # "full" (paper) or "delta" (w = w_init + generated; often more stable)
+  generator: "quantum"       # quantum | classical | none  (the last two are controls)
+  n_qnn_layers: 8            # QNN depth -> trainable QNN angles = n_qubits * n_qnn_layers
+  mapping_hidden: 32
+  standardize: true
+  training:                  # overrides for the QT run
+    lr: 0.005
+    patience: 40
+
+adaptive:
+  enabled: false             # true -> tiers in src/optimization/size_policy.py set depth/pruning/QT from N
+  # tiers: [...]             # optional: replace the default tiers here
+
+device:
+  gnn: "cpu"
+  quantum: "cpu"

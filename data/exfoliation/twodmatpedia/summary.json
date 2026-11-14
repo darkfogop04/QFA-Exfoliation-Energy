@@ -1,0 +1,11 @@
+{
+ "dataset": "twodmatpedia",
+ "n_labelled": 4527,
+ "unit": "meV/atom",
+ "target_min": -1218.7062954166663,
+ "target_max": 3056.4975200000003,
+ "target_mean": 150.94717971639136,
+ "downloaded": "2026-11-13",
+ "label_field": "exfoliation_energy_per_atom (eV/atom x 1000)",
+ "n_entries_total": 6351
+}

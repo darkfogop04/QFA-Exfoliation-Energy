@@ -1,0 +1,11 @@
+{
+ "dataset": "jarvis_dft_3d",
+ "n_labelled": 813,
+ "unit": "meV/atom",
+ "target_min": 0.03,
+ "target_max": 948.93,
+ "target_mean": 110.97239852398523,
+ "downloaded": "2026-11-13",
+ "label_field": "exfoliation_energy",
+ "n_entries_total": 93902
+}

@@ -1,0 +1,14 @@
+{
+ "dataset": "massive_discovery_2025",
+ "n_labelled": 2988,
+ "unit": "meV/A^2 (interlayer binding energy, MatterSim UMLIP)",
+ "target_min": 2.62255527811774,
+ "target_max": 1179.7851169263,
+ "target_mean": 172.19939297236098,
+ "converted": "2026-11-13",
+ "label_field": "E_exf (meV/A^2)",
+ "n_entries_total": 2988,
+ "skipped": 0,
+ "source": "https://doi.org/10.5281/zenodo.17035156 (CC-BY 4.0)",
+ "note": "Labels from the MatterSim universal ML potential, not DFT; per area, not per atom; bulk structures"
+}
